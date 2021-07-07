@@ -94,6 +94,7 @@ public class ProductInfoPage {
 			String emptyCartText = elementUtil.doVisibilityOfelementLocated(emptyShoppingCartMessage, Constants.DEFAULT_TIME_OUT).getText().trim();
 			if(emptyCartText.contains("Your shopping cart is empty!"))
 			{
+				System.out.println("0 quantity empty cart success message test");
 				return true;
 			}
 		}
